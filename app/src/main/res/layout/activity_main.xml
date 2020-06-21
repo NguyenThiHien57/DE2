@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="150"
+                android:gravity="center"
+                android:text="Tiện ích đổi tiền"
+                android:textColor="#000"
+                android:textStyle="bold">
+
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTenKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên khách hàng"
+                android:textColor="@android:color/black"
+                android:textStyle="italic"></TextView>
+
+            <EditText
+                android:id="@+id/edtTenKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nguyen Van A"></EditText>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtSL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lượng"
+                android:textColor="@android:color/black"
+                android:textStyle="italic"></TextView>
+
+            <EditText
+                android:id="@+id/edtSL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="1000"></EditText>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtNguon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguồn"></TextView>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VND"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rbtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USD"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rbtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EUR"></RadioButton>
+            </RadioGroup>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtDich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đích"></TextView>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VND"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rbtn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USD"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rbtn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EUR"></RadioButton>
+            </RadioGroup>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnHT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nhập liệu/Hiển thị"></Button>
+
+            <Button
+                android:id="@+id/btnNLai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nhập lại"></Button>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
